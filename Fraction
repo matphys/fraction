@@ -70,9 +70,13 @@ public:
 	}
 
 	friend  Fraction operator+(const Fraction&b, int a);
+	friend  Fraction operator+(int a, const Fraction&b);
 	friend  Fraction operator*(const Fraction&b, int a);
+	friend  Fraction operator*(int a, const Fraction&b);
 	friend  Fraction operator-(const Fraction&b, int a);
+	friend  Fraction operator-(int a, const Fraction&b);
 	friend  Fraction operator/(const Fraction&b, int a);
+	friend  Fraction operator/(int a, const Fraction&b);
 
 	bool operator==(const Fraction &a) { return compareTo(a) == 0; }
 	bool operator<(const Fraction &a) { return compareTo(a) < 0; }
